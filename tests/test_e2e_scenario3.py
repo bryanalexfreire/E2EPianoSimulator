@@ -8,6 +8,7 @@ logger = logging.getLogger(__name__)
 
 
 @pytest.mark.e2e
+@pytest.mark.scenario3
 def test_play_scenario_3(driver):
     logger.info("[Escenario 3] Inicio")
     piano = PianoPage(driver)

@@ -7,6 +7,7 @@ from utils.test_data import load_json_from_resources
 logger = logging.getLogger(__name__)
 
 @pytest.mark.e2e
+@pytest.mark.scenario2
 def test_play_scenario_2(driver):
     logger.info("[Escenario 2] Inicio")
     piano = PianoPage(driver)
