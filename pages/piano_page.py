@@ -1,4 +1,3 @@
-# python
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -12,7 +11,6 @@ logger = logging.getLogger(__name__)
 class PianoPage(BasePage):
     URL = "https://www.musicca.com/es/piano"
     BODY: Locator = (By.TAG_NAME, "body")
-    TEXT_NOTE: Locator = (By.CSS_SELECTOR, "span.white-key.marked span.note")
     BTN_MARK: Locator = (By.CSS_SELECTOR, "button.mark")
     BTN_CLEAR: Locator = (By.CSS_SELECTOR, "button.btn-reset")
     # `NOTES_RESOURCE` es un JSON con el mapeo de: flag -> {"key": tecla, "note": nombre}
