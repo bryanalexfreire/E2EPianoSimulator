@@ -1,0 +1,13 @@
+{
+  "scenario": {
+    "id": 1,
+    "name": "Escenario 3",
+    "description": "Secuencia larga con repetición final del Escenario 1.",
+    "notes": [
+      "si","si","do","re","re","do","si","la","sol","sol","la","si","la","sol","sol","la","si","sol","la","si","do",
+      "si","sol","la","si","do","si","sol","sol","fa","re",
+      "si","si","do","re","re","do","si","la","sol","sol","la","si","si","la","la"
+    ]
+  }
+}
+

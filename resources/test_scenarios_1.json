@@ -1,0 +1,9 @@
+{
+  "scenario": {
+      "id": 1,
+      "name": "Escenario 1",
+      "description": "Secuencia base: si, si, do, re, re, do, si, la, sol, sol, la, si, si, la, la",
+      "notes": ["si","si", "do", "re", "re", "do", "si", "la", "sol", "sol", "la", "si", "si", "la", "la"]
+    }
+}
+
