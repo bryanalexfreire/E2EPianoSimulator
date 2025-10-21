@@ -1,4 +1,5 @@
 selenium
-pytest-html==3.4.1
+pytest-html==4.1.1
 pytest>=7.0
-
+certifi
+webdriver-manager

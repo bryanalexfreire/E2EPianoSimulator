@@ -22,14 +22,19 @@ class PianoPage(BasePage):
         self._notes_by_note = None  # cache {note: {"key": "z", "flag": "1c"}}
 
     def visit_page(self):
+        logger.info(f"Abriendo página del piano: {self.URL}")
         self.visit(self.URL)
 
     def assert_piano_url(self):
-        assert "piano" in self.get_current_url(), "Not on the piano page"
+        current = self.get_current_url()
+        logger.info("Verificando que la URL contiene 'piano'")
+        assert "piano" in current, f"No estamos en la página del piano. URL actual: {current}"
 
     def _ensure_notes_loaded(self):
         if self._notes_by_note is not None:
+            logger.info("Mapa de notas ya cargado en caché")
             return
+        logger.info(f"Cargando mapa de notas desde recurso: {self.NOTES_RESOURCE}")
         data = load_json_from_resources(self.NOTES_RESOURCE)  # {flag: {key, note}}
         # indexa por nombre de nota para lookup O(1)
         self._notes_by_note = {}
@@ -38,29 +43,38 @@ class PianoPage(BasePage):
             key = entry.get("key")
             if note and key:
                 self._notes_by_note[note] = {"key": key, "flag": flag}
+        logger.info(f"Notas cargadas: {len(self._notes_by_note)} mapeos")
 
     def _resolve_note(self, note_name: str) -> tuple[str, str]:
         self._ensure_notes_loaded()
         note_key = (note_name or "").strip().lower()
         if note_key not in self._notes_by_note:
+            logger.error(f"Nota inválida o no mapeada en JSON: {note_name}")
             raise ValueError(f"Nota inválida o no mapeada en JSON: {note_name}")
         entry = self._notes_by_note[note_key]
+        logger.info(f"Nota '{note_name}' -> key='{entry['key']}', flag='{entry['flag']}'")
         return entry["key"], entry["flag"]
 
     def send_keys_piano(self, key, expected_case, timeout: int = 20, expected_flag: str | None = None):
         flag = (expected_flag or expected_case or "").strip().lstrip("?")
         if not flag:
+            logger.error("expected_flag/expected_case vacío; no se puede validar la URL")
             raise ValueError("expected_flag/expected_case vacío; no se puede validar la URL")
 
+        logger.info(f"Enviando tecla='{key}' y esperando flag='?{flag}' en URL")
         self.type_keys(key, timeout)
 
+        logger.info("Esperando a que la URL contenga el flag…")
         WebDriverWait(self.driver, timeout).until(EC.url_contains(f"?{flag}"))
 
         current = self.get_current_url()
         assert f"?{flag}" in current, f"URL no contiene '?{flag}'. Actual: {current}"
+        logger.info(f"Flag detectado en URL: {current}")
 
+        logger.info("Limpiando flag con botón 'clear'")
         self.click(self.BTN_CLEAR)
         WebDriverWait(self.driver, timeout).until_not(EC.url_contains(f"?{flag}"))
+        logger.info("Flag removido de la URL")
 
     def digit_note(self, key_note: str):
         logger.info(f"Digitando la nota: {key_note}")
