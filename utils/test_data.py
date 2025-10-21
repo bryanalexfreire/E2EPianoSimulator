@@ -7,6 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 def _resources_dir() -> Path:
+    # Calcula la carpeta 'resources' relativa al repo sin depender del cwd.
     return Path(__file__).resolve().parents[1] / "resources"
 
 
@@ -28,16 +29,19 @@ def load_json_from_resources(filename: str) -> Dict[str, Any]:
     logger.info(f"Cargando JSON de recursos: {file_path}")
 
     if not file_path.exists():
+        # Falla temprano con mensaje claro si el archivo no existe.
         logger.error(f"Archivo de datos no encontrado: {file_path}")
         raise FileNotFoundError(f"Archivo de datos no encontrado: {file_path}")
 
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
+            # Log útil para diagnosticar: tamaño de la estructura cargada (si aplica).
             size = len(data) if hasattr(data, "__len__") else "?"
             logger.info(f"JSON cargado correctamente (tamaño={size})")
             return data
     except json.JSONDecodeError as e:
+        # Propaga el error tras registrarlo para que el test falle de forma explícita.
         logger.exception(f"JSON malformado en {file_path}: {e}")
         raise
 
@@ -56,14 +60,17 @@ def get_scenario_notes(filename: str, scenario_index: int = 0) -> List[str]:
     data = load_json_from_resources(filename)
     scenarios = data.get("scenarios", []) if isinstance(data, dict) else []
 
+    # Tolerancia a forma inesperada: si 'scenarios' no es lista, devuelve [] en lugar de explotar.
     if not isinstance(scenarios, list):
         logger.warning("La clave 'scenarios' no es una lista")
         return []
 
+    # Manejo de índice fuera de rango con log y retorno vacío.
     if scenario_index < 0 or scenario_index >= len(scenarios):
         logger.warning(f"Índice de escenario fuera de rango: {scenario_index}")
         return []
 
+    # Resiliencia si el item no es dict.
     notes = scenarios[scenario_index].get("notes", []) if isinstance(scenarios[scenario_index], dict) else []
     logger.info(f"Notas del escenario: {notes}")
     return notes

@@ -4,21 +4,25 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 import logging
 
-from pages.base_page import BasePage
+from pages.base_page import BasePage, Locator
 from utils.test_data import load_json_from_resources
 
 logger = logging.getLogger(__name__)
 
 class PianoPage(BasePage):
     URL = "https://www.musicca.com/es/piano"
-    BODY = (By.TAG_NAME, "body")
-    TEXT_NOTE = (By.CSS_SELECTOR, "span.white-key.marked span.note")
-    BTN_MARK = (By.CSS_SELECTOR, "button.mark")
-    BTN_CLEAR = (By.CSS_SELECTOR, "button.btn-reset")
+    BODY: Locator = (By.TAG_NAME, "body")
+    TEXT_NOTE: Locator = (By.CSS_SELECTOR, "span.white-key.marked span.note")
+    BTN_MARK: Locator = (By.CSS_SELECTOR, "button.mark")
+    BTN_CLEAR: Locator = (By.CSS_SELECTOR, "button.btn-reset")
+    # `NOTES_RESOURCE` es un JSON con el mapeo de: flag -> {"key": tecla, "note": nombre}
+    # Usamos este recurso para traducir nombres de notas a teclas físicas y su "flag" esperado en la URL.
     NOTES_RESOURCE = "notes_map.json"  # se carga desde `resources/`
 
     def __init__(self, driver):
         super().__init__(driver)
+        # Cache para evitar leer/parsear el JSON de notas en cada llamada.
+        # Estructura: { note (lower): {"key": "z", "flag": "1c"}, ... }
         self._notes_by_note = None  # cache {note: {"key": "z", "flag": "1c"}}
 
     def visit_page(self):
@@ -31,12 +35,13 @@ class PianoPage(BasePage):
         assert "piano" in current, f"No estamos en la página del piano. URL actual: {current}"
 
     def _ensure_notes_loaded(self):
+        # Carga perezosa del mapeo de notas desde el recurso en disco y lo indexa por nombre de nota.
         if self._notes_by_note is not None:
             logger.info("Mapa de notas ya cargado en caché")
             return
         logger.info(f"Cargando mapa de notas desde recurso: {self.NOTES_RESOURCE}")
         data = load_json_from_resources(self.NOTES_RESOURCE)  # {flag: {key, note}}
-        # indexa por nombre de nota para lookup O(1)
+        # Indexa por nombre de nota para lookup O(1) y normaliza a lower-case.
         self._notes_by_note = {}
         for flag, entry in data.items():
             note = entry.get("note", "").strip().lower()
@@ -46,6 +51,7 @@ class PianoPage(BasePage):
         logger.info(f"Notas cargadas: {len(self._notes_by_note)} mapeos")
 
     def _resolve_note(self, note_name: str) -> tuple[str, str]:
+        # Traduce un nombre de nota del escenario a (tecla física, flag de URL) usando el cache.
         self._ensure_notes_loaded()
         note_key = (note_name or "").strip().lower()
         if note_key not in self._notes_by_note:
@@ -56,6 +62,8 @@ class PianoPage(BasePage):
         return entry["key"], entry["flag"]
 
     def send_keys_piano(self, key, expected_case, timeout: int = 20, expected_flag: str | None = None):
+        # La página añade un token de query (?<flag>) al presionar la tecla correcta.
+        # Aquí derivamos el flag esperado y validamos que aparezca en la URL, luego lo limpiamos con el botón "clear".
         flag = (expected_flag or expected_case or "").strip().lstrip("?")
         if not flag:
             logger.error("expected_flag/expected_case vacío; no se puede validar la URL")
@@ -71,12 +79,16 @@ class PianoPage(BasePage):
         assert f"?{flag}" in current, f"URL no contiene '?{flag}'. Actual: {current}"
         logger.info(f"Flag detectado en URL: {current}")
 
+        # Limpia el estado de la página para la siguiente nota:
+        # la UI incluye un botón reset que elimina la query flag.
         logger.info("Limpiando flag con botón 'clear'")
         self.click(self.BTN_CLEAR)
         WebDriverWait(self.driver, timeout).until_not(EC.url_contains(f"?{flag}"))
         logger.info("Flag removido de la URL")
 
     def digit_note(self, key_note: str):
+        # Precondición: para que la nota quede resaltada, el botón "mark" debe estar activo.
+        # Luego resolvemos la nota del escenario a (tecla, flag) y validamos ciclo completo (flag -> clear).
         logger.info(f"Digitando la nota: {key_note}")
         self._ensure_mark_active(self.BTN_MARK)
         key, flag = self._resolve_note(key_note)  # lee la key y el flag del JSON

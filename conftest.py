@@ -16,6 +16,7 @@ _LOG_CONFIGURED = False
 
 
 def _setup_logging() -> None:
+    # Idempotente: evita reconfigurar el root logger varias veces durante la sesión de pytest.
     global _LOG_CONFIGURED
     if _LOG_CONFIGURED:
         return
@@ -83,6 +84,7 @@ def _log_file_path() -> Path:
 
 
 def _tail_text(file_path: Path, max_lines: int = 200, max_chars: int = 20000) -> str:
+    # Lee el "final" del archivo de log para inyectarlo en el reporte HTML sin excederse.
     try:
         with file_path.open("r", encoding="utf-8", errors="replace") as f:
             lines = f.readlines()
@@ -102,6 +104,7 @@ def _capture_marked_key_screenshot(driver) -> Tuple[Optional[bytes], str]:
     Devuelve (png_bytes | None, descripcion)."""
     css = "span.white-key.marked span.note"
     try:
+        # Captura dirigida del elemento de mayor interés para E2E; si no aparece, cae a full-page.
         elems = driver.find_elements(By.CSS_SELECTOR, css)  # type: ignore[attr-defined]
         if elems:
             png_bytes = elems[0].screenshot_as_png
@@ -111,6 +114,7 @@ def _capture_marked_key_screenshot(driver) -> Tuple[Optional[bytes], str]:
     except Exception as e:
         logging.getLogger(__name__).warning(f"No se pudo capturar la tecla marcada: {e}")
 
+    # Fallback: screenshot de la página completa en base64
     try:
         b64 = driver.get_screenshot_as_base64()  # type: ignore[attr-defined]
         png_bytes = base64.b64decode(b64)
@@ -134,6 +138,7 @@ def pytest_sessionstart(session):
                 p.unlink()
                 removed += 1
             except Exception:
+                # No bloquear si algún archivo no puede borrarse (p. ej. en uso)
                 pass
     logging.getLogger(__name__).info(f"Limpieza de screenshots previos: {removed} archivos removidos en {reports_dir}")
 
@@ -150,6 +155,7 @@ def driver(request):
     # Exponer el driver en el nodo del test para que los hooks puedan accederlo
     setattr(request.node, "_driver", driver)
 
+    # Log informativo de capabilities si están disponibles.
     try:
         caps = getattr(driver, "capabilities", {}) or {}
         browser_name = caps.get("browserName") or "unknown"

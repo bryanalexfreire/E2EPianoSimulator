@@ -7,7 +7,7 @@ import re
 #   - "scenario1" | "scenario10" -> acepta cualquier scenarioN
 #   - "1,3,7" -> ejecuta múltiples escenarios: e2e and (scenario1 or scenario3 or scenario7)
 #   - cualquier otra cadena se usa como expresión -m directa (p. ej.: "e2e and smoke")
-SELECT = "prueba"
+SELECT = "all"
 
 # Opcional: si querés que el navegador corra en headless por defecto, ponelo en True
 HEADLESS = True
@@ -17,6 +17,8 @@ ALWAYS_SCREENSHOT = False
 
 
 def _to_marker_expr(sel: str | None) -> str | None:
+    # Traduce entradas amigables (números, "scenarioN", listas separadas por coma)
+    # a una expresión de marcadores válida para pytest (-m).
     if not sel:
         return None
     s = sel.strip()
@@ -54,7 +56,7 @@ def _to_marker_expr(sel: str | None) -> str | None:
         adv = " and ".join(others)
         expr = f"{adv} and {expr}" if expr else adv
 
-    # Si hay escenarios y no se incluyó explícitamente 'e2e' en 'others', prefix 'e2e and'
+    # Si hay escenarios y no se incluyó explícitamente 'e2e' en 'others', prefix automático "e2e and"
     if scenarios and (not others or not any(o.lower() == "e2e" or o.lower().startswith("e2e ") for o in others)):
         expr = f"e2e and {expr}" if expr else "e2e"
 
