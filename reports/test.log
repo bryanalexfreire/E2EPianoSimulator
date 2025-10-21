@@ -1,0 +1,1351 @@
+2025-10-21 01:57:24 | INFO | conftest | Pytest configurado. Logging inicializado.
+2025-10-21 01:57:24 | INFO | conftest | Limpieza de screenshots previos: 0 archivos removidos en C:\Users\User\PycharmProjects\ArqPiano\reports
+2025-10-21 01:57:24 | INFO | conftest | Inicializando driver de navegador (headless=True)
+2025-10-21 01:57:24 | INFO | utils.driver_factory | Creando ChromeDriver (headless=True)
+2025-10-21 01:57:24 | INFO | utils.driver_factory | Instalando/obteniendo ChromeDriver con webdriver-manager…
+2025-10-21 01:57:24 | INFO | WDM | ====== WebDriver manager ======
+2025-10-21 01:57:25 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2025-10-21 01:57:25 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2025-10-21 01:57:25 | INFO | WDM | Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 01:57:25 | INFO | utils.driver_factory | ChromeDriver en: C:\Users\User\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe
+2025-10-21 01:57:27 | INFO | utils.driver_factory | Driver inicializado con implicit_wait=3s
+2025-10-21 01:57:27 | INFO | conftest | Driver listo: chrome 141.0.7390.108
+2025-10-21 01:57:27 | INFO | test_e2e_scenario1 | [Escenario 1] Inicio
+2025-10-21 01:57:27 | INFO | pages.piano_page | Abriendo página del piano: https://www.musicca.com/es/piano
+2025-10-21 01:57:27 | INFO | pages.base_page | Visitando URL: https://www.musicca.com/es/piano
+2025-10-21 01:57:30 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano
+2025-10-21 01:57:30 | INFO | pages.piano_page | Verificando que la URL contiene 'piano'
+2025-10-21 01:57:30 | INFO | test_e2e_scenario1 | [Escenario 1] Cargando datos del escenario
+2025-10-21 01:57:30 | INFO | utils.test_data | Cargando JSON de recursos: C:\Users\User\PycharmProjects\ArqPiano\resources\test_scenarios_1.json
+2025-10-21 01:57:30 | INFO | utils.test_data | JSON cargado correctamente (tamaño=1)
+2025-10-21 01:57:30 | INFO | test_e2e_scenario1 | [Escenario 1] Notas a reproducir: 15 | delay=1s
+2025-10-21 01:57:30 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 1/15: si
+2025-10-21 01:57:30 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:57:30 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark'
+2025-10-21 01:57:30 | INFO | pages.base_page | Activando marca en ('css selector', 'button.mark') (class='mark')
+2025-10-21 01:57:30 | INFO | pages.piano_page | Cargando mapa de notas desde recurso: notes_map.json
+2025-10-21 01:57:30 | INFO | utils.test_data | Cargando JSON de recursos: C:\Users\User\PycharmProjects\ArqPiano\resources\notes_map.json
+2025-10-21 01:57:30 | INFO | utils.test_data | JSON cargado correctamente (tamaño=7)
+2025-10-21 01:57:30 | INFO | pages.piano_page | Notas cargadas: 7 mapeos
+2025-10-21 01:57:30 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:57:30 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:57:30 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:57:30 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:31 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:31 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:31 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:31 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:31 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:32 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 2/15: si
+2025-10-21 01:57:32 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:57:32 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:32 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:32 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:32 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:57:32 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:57:32 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:57:32 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:33 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:33 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:33 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:33 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:34 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:35 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 3/15: do
+2025-10-21 01:57:35 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:57:35 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:35 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:35 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:35 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:57:35 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:57:35 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:57:35 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:35 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:57:35 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:57:35 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:35 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:36 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:37 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 4/15: re
+2025-10-21 01:57:37 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:57:37 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:37 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:37 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:37 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:57:37 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:57:37 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:57:37 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:38 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:57:38 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:57:38 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:38 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:38 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:39 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 5/15: re
+2025-10-21 01:57:39 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:57:39 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:39 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:39 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:39 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:57:39 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:57:39 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:57:39 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:40 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:57:40 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:57:40 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:40 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:40 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:41 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 6/15: do
+2025-10-21 01:57:41 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:57:41 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:41 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:41 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:41 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:57:41 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:57:41 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:57:41 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:42 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:57:42 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:57:42 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:42 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:43 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:44 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 7/15: si
+2025-10-21 01:57:44 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:57:44 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:44 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:44 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:44 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:57:44 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:57:44 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:57:44 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:44 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:44 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:44 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:44 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:45 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:46 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 8/15: la
+2025-10-21 01:57:46 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:57:46 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:46 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:46 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:46 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:57:46 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:57:46 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:57:46 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:46 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:57:46 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:57:46 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:46 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:47 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:48 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 9/15: sol
+2025-10-21 01:57:48 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:57:48 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:48 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:48 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:48 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:57:48 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:57:48 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:57:48 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:48 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:57:48 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:57:48 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:48 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:49 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:50 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 10/15: sol
+2025-10-21 01:57:50 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:57:50 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:50 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:50 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:50 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:57:50 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:57:50 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:57:50 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:51 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:57:51 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:57:51 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:51 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:51 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:52 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 11/15: la
+2025-10-21 01:57:52 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:57:52 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:52 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:52 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:52 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:57:52 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:57:52 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:57:52 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:53 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:57:53 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:57:53 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:53 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:53 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:54 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 12/15: si
+2025-10-21 01:57:54 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:57:54 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:54 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:54 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:54 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:57:54 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:57:54 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:57:54 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:55 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:55 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:55 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:55 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:55 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:56 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 13/15: si
+2025-10-21 01:57:56 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:57:57 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:57 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:57 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:57 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:57:57 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:57:57 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:57:57 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:57 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:57 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:57:57 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:57 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:57:58 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:57:59 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 14/15: la
+2025-10-21 01:57:59 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:57:59 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:57:59 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:57:59 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:57:59 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:57:59 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:57:59 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:57:59 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:57:59 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:57:59 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:57:59 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:57:59 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:00 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:01 | INFO | test_e2e_scenario1 | [Escenario 1] Nota 15/15: la
+2025-10-21 01:58:01 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:58:01 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:01 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:01 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:01 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:58:01 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:58:01 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:58:01 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:01 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:01 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:01 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:01 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:02 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:03 | INFO | test_e2e_scenario1 | [Escenario 1] Fin
+2025-10-21 01:58:03 | INFO | conftest | Cerrando driver en 5s…
+2025-10-21 01:58:10 | INFO | conftest | Driver cerrado correctamente.
+2025-10-21 01:58:10 | INFO | conftest | Inicializando driver de navegador (headless=True)
+2025-10-21 01:58:10 | INFO | utils.driver_factory | Creando ChromeDriver (headless=True)
+2025-10-21 01:58:10 | INFO | utils.driver_factory | Instalando/obteniendo ChromeDriver con webdriver-manager…
+2025-10-21 01:58:10 | INFO | WDM | ====== WebDriver manager ======
+2025-10-21 01:58:11 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2025-10-21 01:58:11 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2025-10-21 01:58:12 | INFO | WDM | Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 01:58:12 | INFO | utils.driver_factory | ChromeDriver en: C:\Users\User\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe
+2025-10-21 01:58:13 | INFO | utils.driver_factory | Driver inicializado con implicit_wait=3s
+2025-10-21 01:58:13 | INFO | conftest | Driver listo: chrome 141.0.7390.108
+2025-10-21 01:58:13 | INFO | test_e2e_scenario2 | [Escenario 2] Inicio
+2025-10-21 01:58:13 | INFO | pages.piano_page | Abriendo página del piano: https://www.musicca.com/es/piano
+2025-10-21 01:58:13 | INFO | pages.base_page | Visitando URL: https://www.musicca.com/es/piano
+2025-10-21 01:58:15 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano
+2025-10-21 01:58:15 | INFO | pages.piano_page | Verificando que la URL contiene 'piano'
+2025-10-21 01:58:15 | INFO | test_e2e_scenario2 | [Escenario 2] Cargando datos del escenario
+2025-10-21 01:58:15 | INFO | utils.test_data | Cargando JSON de recursos: C:\Users\User\PycharmProjects\ArqPiano\resources\test_scenario_2.json
+2025-10-21 01:58:15 | INFO | utils.test_data | JSON cargado correctamente (tamaño=1)
+2025-10-21 01:58:15 | INFO | test_e2e_scenario2 | [Escenario 2] Notas a reproducir: 30 | delay=1s
+2025-10-21 01:58:15 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 1/30: si
+2025-10-21 01:58:15 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:15 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark'
+2025-10-21 01:58:15 | INFO | pages.base_page | Activando marca en ('css selector', 'button.mark') (class='mark')
+2025-10-21 01:58:15 | INFO | pages.piano_page | Cargando mapa de notas desde recurso: notes_map.json
+2025-10-21 01:58:15 | INFO | utils.test_data | Cargando JSON de recursos: C:\Users\User\PycharmProjects\ArqPiano\resources\notes_map.json
+2025-10-21 01:58:15 | INFO | utils.test_data | JSON cargado correctamente (tamaño=7)
+2025-10-21 01:58:15 | INFO | pages.piano_page | Notas cargadas: 7 mapeos
+2025-10-21 01:58:15 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:15 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:15 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:15 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:16 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:16 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:16 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:16 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:17 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:18 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 2/30: si
+2025-10-21 01:58:18 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:18 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:18 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:18 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:18 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:18 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:18 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:18 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:18 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:18 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:18 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:18 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:19 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:20 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 3/30: do
+2025-10-21 01:58:20 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:58:20 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:20 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:20 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:20 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:58:20 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:58:20 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:58:20 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:20 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:20 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:20 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:20 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:21 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:22 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 4/30: re
+2025-10-21 01:58:22 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:58:22 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:22 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:22 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:22 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:58:22 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:58:22 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:58:22 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:23 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:23 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:23 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:23 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:23 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:24 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 5/30: re
+2025-10-21 01:58:24 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:58:24 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:24 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:24 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:24 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:58:24 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:58:24 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:58:24 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:25 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:25 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:25 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:25 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:25 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:26 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 6/30: do
+2025-10-21 01:58:26 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:58:26 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:26 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:26 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:26 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:58:26 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:58:26 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:58:27 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:27 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:27 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:27 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:27 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:28 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:29 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 7/30: si
+2025-10-21 01:58:29 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:29 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:29 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:29 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:29 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:29 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:29 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:29 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:29 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:29 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:29 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:29 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:30 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:31 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 8/30: la
+2025-10-21 01:58:31 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:58:31 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:31 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:31 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:31 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:58:31 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:58:31 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:58:31 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:31 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:31 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:31 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:31 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:32 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:33 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 9/30: sol
+2025-10-21 01:58:33 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:58:33 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:33 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:33 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:33 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:58:33 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:58:33 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:58:33 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:34 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:58:34 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:58:34 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:34 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:34 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:35 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 10/30: sol
+2025-10-21 01:58:35 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:58:35 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:35 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:35 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:35 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:58:35 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:58:35 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:58:35 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:36 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:58:36 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:58:36 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:36 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:36 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:37 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 11/30: la
+2025-10-21 01:58:37 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:58:37 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:37 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:37 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:37 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:58:37 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:58:37 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:58:37 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:38 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:38 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:38 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:38 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:38 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:39 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 12/30: si
+2025-10-21 01:58:39 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:39 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:39 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:39 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:39 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:39 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:39 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:39 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:40 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:40 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:40 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:40 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:41 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:42 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 13/30: si
+2025-10-21 01:58:42 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:42 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:42 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:42 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:42 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:42 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:42 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:42 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:42 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:42 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:42 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:42 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:43 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:44 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 14/30: la
+2025-10-21 01:58:44 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:58:44 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:44 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:44 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:44 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:58:44 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:58:44 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:58:44 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:44 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:44 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:44 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:44 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:45 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:46 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 15/30: la
+2025-10-21 01:58:46 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:58:46 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:46 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:46 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:46 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:58:46 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:58:46 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:58:46 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:46 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:46 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:58:46 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:46 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:47 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:48 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 16/30: si
+2025-10-21 01:58:48 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:48 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:48 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:48 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:48 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:48 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:48 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:48 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:49 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:49 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:49 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:49 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:49 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:50 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 17/30: si
+2025-10-21 01:58:50 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:58:50 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:50 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:50 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:50 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:58:50 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:58:50 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:58:50 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:51 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:51 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:58:51 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:51 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:51 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:52 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 18/30: do
+2025-10-21 01:58:52 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:58:52 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:52 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:52 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:52 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:58:52 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:58:52 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:58:52 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:53 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:53 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:53 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:53 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:54 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:55 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 19/30: re
+2025-10-21 01:58:55 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:58:55 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:55 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:55 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:55 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:58:55 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:58:55 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:58:55 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:55 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:55 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:55 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:55 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:56 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:57 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 20/30: re
+2025-10-21 01:58:57 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:58:57 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:57 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:57 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:57 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:58:57 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:58:57 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:58:57 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:57 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:57 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:58:57 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:57 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:58:58 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:58:59 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 21/30: do
+2025-10-21 01:58:59 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:58:59 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:58:59 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:58:59 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:58:59 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:58:59 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:58:59 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:58:59 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:58:59 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:59 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:58:59 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:58:59 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:00 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:01 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 22/30: si
+2025-10-21 01:59:01 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:01 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:01 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:01 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:01 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:01 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:01 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:01 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:02 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:02 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:02 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:02 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:02 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:03 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 23/30: la
+2025-10-21 01:59:03 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:59:03 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:03 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:03 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:03 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:59:03 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:59:03 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:59:03 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:04 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:04 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:04 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:04 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:04 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:05 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 24/30: sol
+2025-10-21 01:59:05 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:59:05 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:05 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:05 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:05 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:59:05 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:59:05 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:59:05 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:06 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:06 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:06 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:06 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:07 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:08 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 25/30: sol
+2025-10-21 01:59:08 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:59:08 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:08 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:08 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:08 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:59:08 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:59:08 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:59:08 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:08 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:08 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:08 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:08 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:09 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:10 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 26/30: la
+2025-10-21 01:59:10 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:59:10 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:10 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:10 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:10 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:59:10 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:59:10 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:59:10 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:10 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:10 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:10 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:10 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:11 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:12 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 27/30: si
+2025-10-21 01:59:12 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:12 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:12 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:12 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:12 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:12 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:12 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:12 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:12 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:12 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:12 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:12 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:13 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:14 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 28/30: si
+2025-10-21 01:59:14 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:14 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:14 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:14 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:14 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:14 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:14 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:14 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:15 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:15 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:15 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:15 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:15 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:16 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 29/30: la
+2025-10-21 01:59:16 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:59:16 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:16 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:16 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:16 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:59:16 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:59:16 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:59:16 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:17 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:17 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:17 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:17 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:17 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:18 | INFO | test_e2e_scenario2 | [Escenario 2] Nota 30/30: la
+2025-10-21 01:59:18 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:59:18 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:18 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:18 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:18 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:59:18 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:59:18 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:59:18 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:19 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:19 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:19 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:19 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:20 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:21 | INFO | test_e2e_scenario2 | [Escenario 2] Fin
+2025-10-21 01:59:21 | INFO | conftest | Cerrando driver en 5s…
+2025-10-21 01:59:28 | INFO | conftest | Driver cerrado correctamente.
+2025-10-21 01:59:28 | INFO | conftest | Inicializando driver de navegador (headless=True)
+2025-10-21 01:59:28 | INFO | utils.driver_factory | Creando ChromeDriver (headless=True)
+2025-10-21 01:59:28 | INFO | utils.driver_factory | Instalando/obteniendo ChromeDriver con webdriver-manager…
+2025-10-21 01:59:28 | INFO | WDM | ====== WebDriver manager ======
+2025-10-21 01:59:29 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2025-10-21 01:59:29 | INFO | WDM | Get LATEST chromedriver version for google-chrome
+2025-10-21 01:59:29 | INFO | WDM | Driver [C:\Users\User\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe] found in cache
+2025-10-21 01:59:29 | INFO | utils.driver_factory | ChromeDriver en: C:\Users\User\.wdm\drivers\chromedriver\win64\141.0.7390.78\chromedriver-win32/chromedriver.exe
+2025-10-21 01:59:31 | INFO | utils.driver_factory | Driver inicializado con implicit_wait=3s
+2025-10-21 01:59:31 | INFO | conftest | Driver listo: chrome 141.0.7390.108
+2025-10-21 01:59:31 | INFO | test_e2e_scenario3 | [Escenario 3] Inicio
+2025-10-21 01:59:31 | INFO | pages.piano_page | Abriendo página del piano: https://www.musicca.com/es/piano
+2025-10-21 01:59:31 | INFO | pages.base_page | Visitando URL: https://www.musicca.com/es/piano
+2025-10-21 01:59:33 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano
+2025-10-21 01:59:33 | INFO | pages.piano_page | Verificando que la URL contiene 'piano'
+2025-10-21 01:59:33 | INFO | test_e2e_scenario3 | [Escenario 3] Cargando datos del escenario
+2025-10-21 01:59:33 | INFO | utils.test_data | Cargando JSON de recursos: C:\Users\User\PycharmProjects\ArqPiano\resources\test_scenario_3.json
+2025-10-21 01:59:33 | INFO | utils.test_data | JSON cargado correctamente (tamaño=1)
+2025-10-21 01:59:33 | INFO | test_e2e_scenario3 | [Escenario 3] Notas a reproducir: 46 | delay=1s
+2025-10-21 01:59:33 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 1/46: si
+2025-10-21 01:59:33 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:33 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark'
+2025-10-21 01:59:33 | INFO | pages.base_page | Activando marca en ('css selector', 'button.mark') (class='mark')
+2025-10-21 01:59:33 | INFO | pages.piano_page | Cargando mapa de notas desde recurso: notes_map.json
+2025-10-21 01:59:33 | INFO | utils.test_data | Cargando JSON de recursos: C:\Users\User\PycharmProjects\ArqPiano\resources\notes_map.json
+2025-10-21 01:59:33 | INFO | utils.test_data | JSON cargado correctamente (tamaño=7)
+2025-10-21 01:59:33 | INFO | pages.piano_page | Notas cargadas: 7 mapeos
+2025-10-21 01:59:33 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:33 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:33 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:34 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:34 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:34 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:34 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:34 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:35 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:36 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 2/46: si
+2025-10-21 01:59:36 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:36 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:36 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:36 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:36 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:36 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:36 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:36 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:36 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:36 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:36 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:36 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:37 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:38 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 3/46: do
+2025-10-21 01:59:38 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:59:38 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:38 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:38 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:38 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:59:38 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:59:38 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:59:38 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:39 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:59:39 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:59:39 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:39 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:39 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:40 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 4/46: re
+2025-10-21 01:59:40 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:59:40 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:40 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:40 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:40 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:59:40 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:59:40 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:59:40 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:41 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:59:41 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:59:41 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:41 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:41 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:42 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 5/46: re
+2025-10-21 01:59:42 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 01:59:42 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:42 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:42 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:42 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 01:59:42 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 01:59:42 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 01:59:42 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:43 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 01:59:43 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 01:59:43 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:43 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:44 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:45 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 6/46: do
+2025-10-21 01:59:45 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 01:59:45 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:45 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:45 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:45 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 01:59:45 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 01:59:45 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 01:59:45 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:45 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 01:59:45 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 01:59:45 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:45 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:46 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:47 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 7/46: si
+2025-10-21 01:59:47 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:47 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:47 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:47 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:47 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:47 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:47 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:47 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:47 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:47 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:47 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:47 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:48 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:49 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 8/46: la
+2025-10-21 01:59:49 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:59:49 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:49 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:49 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:49 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:59:49 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:59:49 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:59:49 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:49 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:49 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:49 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:49 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:50 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:51 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 9/46: sol
+2025-10-21 01:59:51 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:59:51 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:51 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:51 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:51 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:59:51 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:59:51 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:59:51 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:52 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:52 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:52 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:52 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:52 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:53 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 10/46: sol
+2025-10-21 01:59:53 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 01:59:53 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:53 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:53 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:53 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 01:59:53 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 01:59:53 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 01:59:53 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:54 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:54 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 01:59:54 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:54 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:54 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:55 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 11/46: la
+2025-10-21 01:59:55 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 01:59:55 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:55 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:55 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:55 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 01:59:55 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 01:59:55 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 01:59:55 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:56 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:56 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 01:59:56 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:56 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:57 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 01:59:58 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 12/46: si
+2025-10-21 01:59:58 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 01:59:58 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 01:59:58 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 01:59:58 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 01:59:58 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 01:59:58 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 01:59:58 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 01:59:58 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 01:59:58 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:58 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 01:59:58 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 01:59:58 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 01:59:59 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:00 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 13/46: la
+2025-10-21 02:00:00 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:00:00 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:00 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:00 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:00 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:00:00 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:00:00 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:00:00 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:00 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:00 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:00 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:00 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:01 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:02 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 14/46: sol
+2025-10-21 02:00:02 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:00:02 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:02 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:02 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:02 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:00:02 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:00:02 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:00:02 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:03 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:03 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:03 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:03 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:03 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:04 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 15/46: sol
+2025-10-21 02:00:04 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:00:04 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:04 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:04 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:04 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:00:04 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:00:04 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:00:04 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:05 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:05 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:05 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:05 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:05 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:06 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 16/46: la
+2025-10-21 02:00:06 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:00:06 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:06 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:06 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:06 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:00:06 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:00:06 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:00:06 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:07 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:07 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:07 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:07 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:07 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:08 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 17/46: si
+2025-10-21 02:00:08 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:09 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:09 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:09 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:09 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:09 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:09 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:09 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:09 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:09 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:09 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:09 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:10 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:11 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 18/46: sol
+2025-10-21 02:00:11 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:00:11 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:11 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:11 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:11 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:00:11 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:00:11 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:00:11 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:11 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:11 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:11 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:11 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:12 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:13 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 19/46: la
+2025-10-21 02:00:13 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:00:13 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:13 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:13 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:13 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:00:13 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:00:13 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:00:13 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:13 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:13 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:13 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:13 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:14 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:15 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 20/46: si
+2025-10-21 02:00:15 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:15 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:15 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:15 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:15 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:15 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:15 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:15 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:16 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:16 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:16 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:16 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:16 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:17 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 21/46: do
+2025-10-21 02:00:17 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 02:00:17 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:17 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:17 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:17 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 02:00:17 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 02:00:17 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 02:00:17 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:18 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:18 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:18 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:18 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:18 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:20 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 22/46: si
+2025-10-21 02:00:20 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:20 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:20 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:20 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:20 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:20 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:20 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:20 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:20 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:20 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:20 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:20 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:21 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:22 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 23/46: sol
+2025-10-21 02:00:22 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:00:22 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:22 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:22 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:22 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:00:22 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:00:22 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:00:22 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:22 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:22 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:22 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:22 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:23 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:24 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 24/46: la
+2025-10-21 02:00:24 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:00:24 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:24 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:24 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:24 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:00:24 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:00:24 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:00:24 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:25 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:25 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:25 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:25 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:25 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:26 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 25/46: si
+2025-10-21 02:00:26 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:26 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:26 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:26 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:26 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:26 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:26 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:26 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:27 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:27 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:27 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:27 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:27 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:28 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 26/46: do
+2025-10-21 02:00:28 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 02:00:28 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:28 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:28 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:28 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 02:00:28 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 02:00:28 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 02:00:28 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:29 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:29 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:29 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:29 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:29 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:30 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 27/46: si
+2025-10-21 02:00:30 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:30 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:30 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:30 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:30 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:30 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:30 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:30 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:31 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:31 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:31 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:31 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:32 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:33 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 28/46: sol
+2025-10-21 02:00:33 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:00:33 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:33 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:33 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:33 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:00:33 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:00:33 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:00:33 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:33 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:33 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:33 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:33 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:34 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:35 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 29/46: sol
+2025-10-21 02:00:35 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:00:35 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:35 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:35 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:35 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:00:35 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:00:35 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:00:35 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:35 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:35 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:00:35 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:35 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:36 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:37 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 30/46: fa
+2025-10-21 02:00:37 | INFO | pages.piano_page | Digitando la nota: fa
+2025-10-21 02:00:37 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:37 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:37 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:37 | INFO | pages.piano_page | Nota 'fa' -> key='q', flag='1f'
+2025-10-21 02:00:37 | INFO | pages.piano_page | Enviando tecla='q' y esperando flag='?1f' en URL
+2025-10-21 02:00:37 | INFO | pages.base_page | Enviando tecla 'q' (timeout=20s)
+2025-10-21 02:00:37 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:37 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1f
+2025-10-21 02:00:37 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1f
+2025-10-21 02:00:37 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:37 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:38 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:39 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 31/46: re
+2025-10-21 02:00:39 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 02:00:39 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:39 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:39 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:39 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 02:00:39 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 02:00:39 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 02:00:39 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:40 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 02:00:40 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 02:00:40 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:40 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:40 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:41 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 32/46: si
+2025-10-21 02:00:41 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:42 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:42 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:42 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:42 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:42 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:42 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:43 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:44 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:44 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:44 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:44 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:44 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:45 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 33/46: si
+2025-10-21 02:00:45 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:45 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:45 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:45 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:45 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:45 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:45 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:45 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:46 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:46 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:46 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:46 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:46 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:47 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 34/46: do
+2025-10-21 02:00:47 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 02:00:47 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:47 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:47 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:47 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 02:00:47 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 02:00:47 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 02:00:48 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:48 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:48 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:48 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:48 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:49 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:50 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 35/46: re
+2025-10-21 02:00:50 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 02:00:50 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:50 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:50 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:50 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 02:00:50 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 02:00:50 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 02:00:50 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:50 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 02:00:50 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 02:00:50 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:50 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:51 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:52 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 36/46: re
+2025-10-21 02:00:52 | INFO | pages.piano_page | Digitando la nota: re
+2025-10-21 02:00:52 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:52 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:52 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:52 | INFO | pages.piano_page | Nota 're' -> key='x', flag='1d'
+2025-10-21 02:00:52 | INFO | pages.piano_page | Enviando tecla='x' y esperando flag='?1d' en URL
+2025-10-21 02:00:52 | INFO | pages.base_page | Enviando tecla 'x' (timeout=20s)
+2025-10-21 02:00:52 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:52 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1d
+2025-10-21 02:00:52 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1d
+2025-10-21 02:00:52 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:52 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:53 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:54 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 37/46: do
+2025-10-21 02:00:54 | INFO | pages.piano_page | Digitando la nota: do
+2025-10-21 02:00:54 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:54 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:54 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:54 | INFO | pages.piano_page | Nota 'do' -> key='z', flag='1c'
+2025-10-21 02:00:54 | INFO | pages.piano_page | Enviando tecla='z' y esperando flag='?1c' en URL
+2025-10-21 02:00:54 | INFO | pages.base_page | Enviando tecla 'z' (timeout=20s)
+2025-10-21 02:00:54 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:55 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:55 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1c
+2025-10-21 02:00:55 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:55 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:55 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:56 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 38/46: si
+2025-10-21 02:00:56 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:00:56 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:56 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:56 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:56 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:00:56 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:00:56 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:00:56 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:57 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:57 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:00:57 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:57 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:57 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:00:58 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 39/46: la
+2025-10-21 02:00:58 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:00:58 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:00:58 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:00:58 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:00:58 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:00:58 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:00:58 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:00:58 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:00:59 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:59 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:00:59 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:00:59 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:00:59 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:00 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 40/46: sol
+2025-10-21 02:01:00 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:01:00 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:00 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:00 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:00 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:01:00 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:01:00 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:01:01 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:01 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:01:01 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:01:01 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:01 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:02 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:03 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 41/46: sol
+2025-10-21 02:01:03 | INFO | pages.piano_page | Digitando la nota: sol
+2025-10-21 02:01:03 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:03 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:03 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:03 | INFO | pages.piano_page | Nota 'sol' -> key='w', flag='1g'
+2025-10-21 02:01:03 | INFO | pages.piano_page | Enviando tecla='w' y esperando flag='?1g' en URL
+2025-10-21 02:01:03 | INFO | pages.base_page | Enviando tecla 'w' (timeout=20s)
+2025-10-21 02:01:03 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:03 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?1g
+2025-10-21 02:01:03 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?1g
+2025-10-21 02:01:03 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:03 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:04 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:05 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 42/46: la
+2025-10-21 02:01:05 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:01:05 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:05 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:05 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:05 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:01:05 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:01:05 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:01:05 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:06 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:01:06 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:01:06 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:06 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:06 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:07 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 43/46: si
+2025-10-21 02:01:07 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:01:07 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:07 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:07 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:07 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:01:07 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:01:07 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:01:07 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:08 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:01:08 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:01:08 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:08 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:09 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:10 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 44/46: si
+2025-10-21 02:01:10 | INFO | pages.piano_page | Digitando la nota: si
+2025-10-21 02:01:10 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:10 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:10 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:10 | INFO | pages.piano_page | Nota 'si' -> key='r', flag='2b'
+2025-10-21 02:01:10 | INFO | pages.piano_page | Enviando tecla='r' y esperando flag='?2b' en URL
+2025-10-21 02:01:10 | INFO | pages.base_page | Enviando tecla 'r' (timeout=20s)
+2025-10-21 02:01:10 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:10 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2b
+2025-10-21 02:01:10 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2b
+2025-10-21 02:01:10 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:10 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:11 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:12 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 45/46: la
+2025-10-21 02:01:12 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:01:12 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:12 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:12 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:12 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:01:12 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:01:12 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:01:12 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:12 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:01:12 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:01:12 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:12 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:13 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:14 | INFO | test_e2e_scenario3 | [Escenario 3] Nota 46/46: la
+2025-10-21 02:01:14 | INFO | pages.piano_page | Digitando la nota: la
+2025-10-21 02:01:14 | INFO | pages.base_page | class de ('css selector', 'button.mark'): 'mark active'
+2025-10-21 02:01:14 | INFO | pages.base_page | La marca ya está activa.
+2025-10-21 02:01:14 | INFO | pages.piano_page | Mapa de notas ya cargado en caché
+2025-10-21 02:01:14 | INFO | pages.piano_page | Nota 'la' -> key='e', flag='2a'
+2025-10-21 02:01:14 | INFO | pages.piano_page | Enviando tecla='e' y esperando flag='?2a' en URL
+2025-10-21 02:01:14 | INFO | pages.base_page | Enviando tecla 'e' (timeout=20s)
+2025-10-21 02:01:14 | INFO | pages.piano_page | Esperando a que la URL contenga el flag…
+2025-10-21 02:01:15 | INFO | pages.base_page | URL actual: https://www.musicca.com/es/piano?2a
+2025-10-21 02:01:15 | INFO | pages.piano_page | Flag detectado en URL: https://www.musicca.com/es/piano?2a
+2025-10-21 02:01:15 | INFO | pages.piano_page | Limpiando flag con botón 'clear'
+2025-10-21 02:01:15 | INFO | pages.base_page | Click en elemento: ('css selector', 'button.btn-reset')
+2025-10-21 02:01:15 | INFO | pages.piano_page | Flag removido de la URL
+2025-10-21 02:01:16 | INFO | test_e2e_scenario3 | [Escenario 3] Fin
+2025-10-21 02:01:16 | INFO | conftest | Cerrando driver en 5s…
+2025-10-21 02:01:23 | INFO | conftest | Driver cerrado correctamente.
