@@ -1,4 +1,30 @@
-# ArqPiano - Automatización E2E con Selenium + Pytest
+# Selenium + Pytest E2E (piano simulator)
+
+End-to-end suite for a public online piano ([musicca.com/piano](https://www.musicca.com/es/piano)) written with Selenium WebDriver, Pytest and the Page Object Model. Each test plays a sequence of notes from a JSON file and verifies that the page reports the correct key.
+
+## What it demonstrates
+
+- Page Object Model with a shared `BasePage` and explicit waits.
+- Data-driven scenarios: note sequences and key mapping live in `resources/*.json`.
+- Custom Pytest hooks in `conftest.py`: screenshot of the pressed key on failure (or always), recent logs attached to the HTML report.
+- Markers to run one scenario or all of them, plus a small `runner.py` launcher.
+- Headless mode and CI on GitHub Actions.
+
+## Quick start
+
+Requires Python 3.10+ and Google Chrome (the driver is managed by `webdriver-manager`).
+
+```bash
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+pytest -m "e2e and scenario1" --headless
+```
+
+Options: `--headless`, `--always-screenshot`. The HTML report is written to `reports/pytest.html`.
+
+The project documentation below is in Spanish.
+
+---
 
 ## Cómo ejecutar (lo más importante)
 
