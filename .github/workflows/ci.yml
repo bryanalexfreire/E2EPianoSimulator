@@ -1,10 +1,7 @@
 name: E2E
 
+# The suite drives a third-party website, so it runs on demand instead of on every push.
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
